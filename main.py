@@ -1,9 +1,8 @@
-def hello():
-  print("hi")
+def add_sum(a:int,b:int)->int:
+    if not isinstance(a,int) or not isinstance(b,int):
+        raise TypeError("the values must be int")
+    return a+b
 
 
-def bye():
-  print("bye")
-
-
-print(hello())
+add1=add_sum(1,2)
+print(add1)
